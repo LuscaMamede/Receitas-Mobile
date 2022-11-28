@@ -1,8 +1,10 @@
-# Comidas;
+# Aplicativo Lista de Receitas Pessoal
 
-Projeto relacionado a Livro de Receitas Mobile feito em Flutter/Dart;
+Projeto Feito em Flutter/Dart
 
-## Resumo;
+## Projeto Relacionado ao Curso Udemy de Flutter
 
-Projeto usado como base em treinamento Flutter na Udemy/Chiptronic - Piraju;
+Base feita como treinamento em [Chiptronic-Piraju]
+
+- https://www.udemy.com/course/curso-flutter/
 
