@@ -34,7 +34,7 @@ class MainDrawer extends StatelessWidget {
             child: const Text(
               'Vamos Cozinhar!',
               style: TextStyle(
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
                 fontSize: 30,
                 color: Colors.black,
               ),
