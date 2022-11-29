@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import '../models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
-  const MealDetailScreen({super.key});
+  const MealDetailScreen({Key? key}) : super(key: key);
 
   Widget _createSectionTitle(BuildContext context, String title) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
-      child: Text(title, style: Theme.of(context).textTheme.headline6),
+      child: Text(
+        title,
+        style: Theme.of(context).textTheme.headline6,
+      ),
     );
   }
 
-  Widget _createSectionContainer(
-    Widget child,
-  ) {
+  Widget _createSectionContainer(Widget child) {
     return Container(
       width: 330,
       height: 200,
@@ -30,7 +31,7 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meal = ModalRoute.of(context)?.settings.arguments as Meal;
+    final meal = ModalRoute.of(context)!.settings.arguments as Meal;
 
     return Scaffold(
       appBar: AppBar(
@@ -51,7 +52,7 @@ class MealDetailScreen extends StatelessWidget {
             _createSectionContainer(
               ListView.builder(
                 itemCount: meal.ingredients.length,
-                itemBuilder: (context, index) {
+                itemBuilder: (ctx, index) {
                   return Card(
                     color: Theme.of(context).colorScheme.secondary,
                     child: Padding(
