@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/category.dart';
 
 class TabsScreen extends StatelessWidget {
   const TabsScreen({super.key});

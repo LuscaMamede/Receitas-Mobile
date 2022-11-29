@@ -5,8 +5,6 @@ class FavoriteScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Minhas refeições favoritas'),
-    );
+    return const Text('Minhas refeições favoritas');
   }
 }
